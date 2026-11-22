@@ -441,3 +441,20 @@ html[data-build="93K2-2026-11-22-01"]{--website-version:"93K2-2026-11-22-01"}
  .btn,.ad-button,.ad-small,.ad-day,.ad-mode,.meal-card,.plan-card,.review-card{transition:none}
  .btn:hover,.ad-button:hover,.ad-small:hover,.ad-day:hover,.meal-card:hover,.plan-card:hover,.review-card:hover{transform:none}
 }
+
+/* Employee authentication follows Figma's split 980/460 layout. */
+.staff-login-layout{min-height:100vh;display:grid;grid-template-columns:460px minmax(0,1fr);direction:rtl;background:#fff}
+.staff-login-brand{grid-column:1;background:#f1f8f3;color:#0e5a41;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:50px 48px;text-align:center;border-left:1px solid #dbe9df}
+.staff-login-brand img{width:190px;height:155px;object-fit:contain;margin:0 0 32px}
+.staff-login-brand h2{font-size:26px;margin:0 0 17px;color:#0e5a41}
+.staff-login-brand p{font-size:18px;line-height:2;max-width:400px}
+.staff-login-brand small{font-size:15px;color:#6b8c77;display:block;margin-top:20px}
+.staff-login-content{grid-column:2;display:grid;place-items:center;padding:60px 32px}
+.staff-login-inner{width:min(470px,100%);text-align:right}
+.staff-login-inner h1{font-size:27px;margin:26px 0 8px}
+.staff-login-inner>p{font-size:14px;margin:0 0 28px}
+.staff-login-inner form{display:grid;gap:20px}
+.staff-login-inner .field{min-width:0}
+.staff-login-inner .btn-full{height:51px;margin-top:10px}
+.staff-login-note{font-size:12px!important;margin-top:24px!important}
+@media(max-width:900px){.staff-login-layout{grid-template-columns:1fr}.staff-login-brand{grid-column:1;min-height:210px;padding:15px;order:0}.staff-login-brand img{width:105px;height:75px;margin:0}.staff-login-brand h2{font-size:20px}.staff-login-brand p,.staff-login-brand small{display:none}.staff-login-content{grid-column:1;padding:32px 20px;order:1;place-items:start center}}

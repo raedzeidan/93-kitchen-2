@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/verify.mjs && vite build",
+    "build": "pnpm check && vite build",
     "preview": "vite preview",
     "format": "oxfmt",
-    "check": "node scripts/verify.mjs"
+    "check": "node scripts/verify.mjs && node scripts/smoke.mjs"
   },
   "dependencies": {
     "react": "^19.0.0",
